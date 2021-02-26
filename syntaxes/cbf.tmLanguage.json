@@ -1,0 +1,58 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "cbf",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.variables",
+					"match": "\\b(variables)\\b",
+					"settings": {
+						"foreground": "#4E26AE"
+					}
+				},
+				{
+					"name": "support.variable.message",
+					"match": "\\b(message)\\b",
+					"settings": {
+						"foreground": "#E52A4E"
+					}
+				},
+				{
+					"name": "entity.name.type.options",
+					"match": "\\b(options)\\b",
+					"settings": {
+						"foreground": "#0093FF"
+					}
+				},
+				{
+					"name": "entity.name.tag.command",
+					"match": "\\b(command)\\b",
+					"settings": {
+						"foreground": "#00B77E"
+					}
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.cbf",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.cbf",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.yml"
+}

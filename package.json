@@ -1,0 +1,25 @@
+{
+    "name": "cbf",
+    "displayName": "cbf",
+    "description": "Adds language support for cbf files",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.53.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "cbf",
+            "aliases": ["cbf", "cbf"],
+            "extensions": [".yml",".yaml",".simple.yml",".simple.yaml",".cbf","cbf.yml","cbf.yaml"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "cbf",
+            "scopeName": "source.yml",
+            "path": "./syntaxes/cbf.tmLanguage.json"
+        }]
+    }
+}
