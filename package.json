@@ -1,5 +1,6 @@
 {
     "name": "cbf",
+    "publisher": "cbf",
     "displayName": "cbf",
     "description": "Adds language support for cbf files",
     "version": "0.0.1",
